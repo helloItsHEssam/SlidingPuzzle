@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE46ACA92AB6F7000007A244 /* sliding_puzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46ACA82AB6F7000007A244 /* sliding_puzzleApp.swift */; };
+		DE46ACAB2AB6F7000007A244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46ACAA2AB6F7000007A244 /* ContentView.swift */; };
+		DE46ACAD2AB6F7020007A244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE46ACAC2AB6F7020007A244 /* Assets.xcassets */; };
+		DE46ACB02AB6F7020007A244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE46ACAF2AB6F7020007A244 /* Preview Assets.xcassets */; };
+		DE46ACBA2AB6F7030007A244 /* sliding_puzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46ACB92AB6F7030007A244 /* sliding_puzzleTests.swift */; };
+		DE46ACC42AB6F7030007A244 /* sliding_puzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46ACC32AB6F7030007A244 /* sliding_puzzleUITests.swift */; };
+		DE46ACC62AB6F7030007A244 /* sliding_puzzleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46ACC52AB6F7030007A244 /* sliding_puzzleUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE46ACB62AB6F7030007A244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE46AC9D2AB6F7000007A244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE46ACA42AB6F7000007A244;
+			remoteInfo = "sliding puzzle";
+		};
+		DE46ACC02AB6F7030007A244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE46AC9D2AB6F7000007A244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE46ACA42AB6F7000007A244;
+			remoteInfo = "sliding puzzle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE46ACA52AB6F7000007A244 /* sliding puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sliding puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE46ACA82AB6F7000007A244 /* sliding_puzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_puzzleApp.swift; sourceTree = "<group>"; };
+		DE46ACAA2AB6F7000007A244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE46ACAC2AB6F7020007A244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE46ACAF2AB6F7020007A244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE46ACB52AB6F7030007A244 /* sliding puzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sliding puzzleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE46ACB92AB6F7030007A244 /* sliding_puzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_puzzleTests.swift; sourceTree = "<group>"; };
+		DE46ACBF2AB6F7030007A244 /* sliding puzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sliding puzzleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE46ACC32AB6F7030007A244 /* sliding_puzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_puzzleUITests.swift; sourceTree = "<group>"; };
+		DE46ACC52AB6F7030007A244 /* sliding_puzzleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_puzzleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE46ACA22AB6F7000007A244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACB22AB6F7030007A244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACBC2AB6F7030007A244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE46AC9C2AB6F7000007A244 = {
+			isa = PBXGroup;
+			children = (
+				DE46ACA72AB6F7000007A244 /* sliding puzzle */,
+				DE46ACB82AB6F7030007A244 /* sliding puzzleTests */,
+				DE46ACC22AB6F7030007A244 /* sliding puzzleUITests */,
+				DE46ACA62AB6F7000007A244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE46ACA62AB6F7000007A244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE46ACA52AB6F7000007A244 /* sliding puzzle.app */,
+				DE46ACB52AB6F7030007A244 /* sliding puzzleTests.xctest */,
+				DE46ACBF2AB6F7030007A244 /* sliding puzzleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE46ACA72AB6F7000007A244 /* sliding puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				DE46ACA82AB6F7000007A244 /* sliding_puzzleApp.swift */,
+				DE46ACAA2AB6F7000007A244 /* ContentView.swift */,
+				DE46ACAC2AB6F7020007A244 /* Assets.xcassets */,
+				DE46ACAE2AB6F7020007A244 /* Preview Content */,
+			);
+			path = "sliding puzzle";
+			sourceTree = "<group>";
+		};
+		DE46ACAE2AB6F7020007A244 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE46ACAF2AB6F7020007A244 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE46ACB82AB6F7030007A244 /* sliding puzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE46ACB92AB6F7030007A244 /* sliding_puzzleTests.swift */,
+			);
+			path = "sliding puzzleTests";
+			sourceTree = "<group>";
+		};
+		DE46ACC22AB6F7030007A244 /* sliding puzzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE46ACC32AB6F7030007A244 /* sliding_puzzleUITests.swift */,
+				DE46ACC52AB6F7030007A244 /* sliding_puzzleUITestsLaunchTests.swift */,
+			);
+			path = "sliding puzzleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE46ACA42AB6F7000007A244 /* sliding puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE46ACC92AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzle" */;
+			buildPhases = (
+				DE46ACA12AB6F7000007A244 /* Sources */,
+				DE46ACA22AB6F7000007A244 /* Frameworks */,
+				DE46ACA32AB6F7000007A244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sliding puzzle";
+			productName = "sliding puzzle";
+			productReference = DE46ACA52AB6F7000007A244 /* sliding puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE46ACB42AB6F7030007A244 /* sliding puzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE46ACCC2AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzleTests" */;
+			buildPhases = (
+				DE46ACB12AB6F7030007A244 /* Sources */,
+				DE46ACB22AB6F7030007A244 /* Frameworks */,
+				DE46ACB32AB6F7030007A244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE46ACB72AB6F7030007A244 /* PBXTargetDependency */,
+			);
+			name = "sliding puzzleTests";
+			productName = "sliding puzzleTests";
+			productReference = DE46ACB52AB6F7030007A244 /* sliding puzzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE46ACBE2AB6F7030007A244 /* sliding puzzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE46ACCF2AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzleUITests" */;
+			buildPhases = (
+				DE46ACBB2AB6F7030007A244 /* Sources */,
+				DE46ACBC2AB6F7030007A244 /* Frameworks */,
+				DE46ACBD2AB6F7030007A244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE46ACC12AB6F7030007A244 /* PBXTargetDependency */,
+			);
+			name = "sliding puzzleUITests";
+			productName = "sliding puzzleUITests";
+			productReference = DE46ACBF2AB6F7030007A244 /* sliding puzzleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE46AC9D2AB6F7000007A244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DE46ACA42AB6F7000007A244 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DE46ACB42AB6F7030007A244 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DE46ACA42AB6F7000007A244;
+					};
+					DE46ACBE2AB6F7030007A244 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DE46ACA42AB6F7000007A244;
+					};
+				};
+			};
+			buildConfigurationList = DE46ACA02AB6F7000007A244 /* Build configuration list for PBXProject "sliding puzzle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE46AC9C2AB6F7000007A244;
+			productRefGroup = DE46ACA62AB6F7000007A244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE46ACA42AB6F7000007A244 /* sliding puzzle */,
+				DE46ACB42AB6F7030007A244 /* sliding puzzleTests */,
+				DE46ACBE2AB6F7030007A244 /* sliding puzzleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE46ACA32AB6F7000007A244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE46ACB02AB6F7020007A244 /* Preview Assets.xcassets in Resources */,
+				DE46ACAD2AB6F7020007A244 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACB32AB6F7030007A244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACBD2AB6F7030007A244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE46ACA12AB6F7000007A244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE46ACAB2AB6F7000007A244 /* ContentView.swift in Sources */,
+				DE46ACA92AB6F7000007A244 /* sliding_puzzleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACB12AB6F7030007A244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE46ACBA2AB6F7030007A244 /* sliding_puzzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE46ACBB2AB6F7030007A244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE46ACC42AB6F7030007A244 /* sliding_puzzleUITests.swift in Sources */,
+				DE46ACC62AB6F7030007A244 /* sliding_puzzleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE46ACB72AB6F7030007A244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE46ACA42AB6F7000007A244 /* sliding puzzle */;
+			targetProxy = DE46ACB62AB6F7030007A244 /* PBXContainerItemProxy */;
+		};
+		DE46ACC12AB6F7030007A244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE46ACA42AB6F7000007A244 /* sliding puzzle */;
+			targetProxy = DE46ACC02AB6F7030007A244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DE46ACC72AB6F7030007A244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE46ACC82AB6F7030007A244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE46ACCA2AB6F7030007A244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sliding puzzle/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE46ACCB2AB6F7030007A244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sliding puzzle/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE46ACCD2AB6F7030007A244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sliding puzzle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sliding puzzle";
+			};
+			name = Debug;
+		};
+		DE46ACCE2AB6F7030007A244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sliding puzzle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sliding puzzle";
+			};
+			name = Release;
+		};
+		DE46ACD02AB6F7030007A244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sliding puzzle";
+			};
+			name = Debug;
+		};
+		DE46ACD12AB6F7030007A244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PDY8D2V47;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hessamdev.sliding-puzzleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sliding puzzle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE46ACA02AB6F7000007A244 /* Build configuration list for PBXProject "sliding puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE46ACC72AB6F7030007A244 /* Debug */,
+				DE46ACC82AB6F7030007A244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE46ACC92AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE46ACCA2AB6F7030007A244 /* Debug */,
+				DE46ACCB2AB6F7030007A244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE46ACCC2AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE46ACCD2AB6F7030007A244 /* Debug */,
+				DE46ACCE2AB6F7030007A244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE46ACCF2AB6F7030007A244 /* Build configuration list for PBXNativeTarget "sliding puzzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE46ACD02AB6F7030007A244 /* Debug */,
+				DE46ACD12AB6F7030007A244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE46AC9D2AB6F7000007A244 /* Project object */;
+}
