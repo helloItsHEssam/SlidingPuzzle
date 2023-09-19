@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct GameView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct GameView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
+    @Environment(\.verticalSizeClass) private var verticalSizeClass
+    @EnvironmentObject var nav: NavigationManager
+    private var gridItemLayout = Array(repeating: GridItem(.flexible(), spacing: 1), count: 3)
+
+    var body: some View {
+        if verticalSizeClass == .compact {
+            Text("Hi, roate phone")
+                .navigationBarHidden(true)
+        } else {
+            ZStack {
+                Color.background
+                    .ignoresSafeArea()
+                VStack {
+                    ScrollView {
+                        LazyVGrid(columns: gridItemLayout, spacing: 1) {
+                            ForEach((0...8), id: \.self) { _ in
+                                Circle()
+                                    .background(Color.tintBlue)
+                            }
+                        }
+                        .padding()
+                    }
+                }
+            }
+            .navigationBarHidden(true)
+        }
     }
 }

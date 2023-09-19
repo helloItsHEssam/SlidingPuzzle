@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct StartView: View {
-    var body: some View {
-        SimpleButtonView(title: "Start") {
-            print("hello")
-        }
-    }
-}
 
-struct StartView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
+    @StateObject var nav = NavigationManager()
+    
+    var body: some View {
+        NavigationStack(path: $nav.path) {
+            SimpleButtonView(title: "Start") {
+                nav.goToGamePage()
+            }
+            .navigationDestination(for: NavigationRoute.self) { route in
+                switch route {
+                case .gameScene: GameView()
+                }
+            }
+        }
+        .environmentObject(nav)
     }
 }
