@@ -11,4 +11,5 @@ extension Color {
 
     static let tintBlue = Color("blue")
     static let background = Color("background")
+    static let detailText = Color("detailText")
 }

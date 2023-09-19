@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		DE0EC79F2AB9672200D66EF6 /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC79E2AB9672200D66EF6 /* NavigationRoute.swift */; };
 		DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7A02AB9878B00D66EF6 /* NavigationManager.swift */; };
+		DE0EC7A32AB9BFC900D66EF6 /* PuzzleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7A22AB9BFC900D66EF6 /* PuzzleItemView.swift */; };
+		DE0EC7A52AB9C0FC00D66EF6 /* ContentPuzzleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7A42AB9C0FC00D66EF6 /* ContentPuzzleItemView.swift */; };
+		DE0EC7AA2AB9C9BD00D66EF6 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7A92AB9C9BD00D66EF6 /* PuzzleView.swift */; };
+		DE0EC7AE2AB9CFFB00D66EF6 /* DetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7AD2AB9CFFB00D66EF6 /* DetailTextView.swift */; };
+		DE0EC7B02AB9D08900D66EF6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7AF2AB9D08900D66EF6 /* DetailView.swift */; };
 		DE200B782AB87D320032DA64 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B772AB87D320032DA64 /* StartView.swift */; };
 		DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */; };
 		DE200B812AB87E120032DA64 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B802AB87E120032DA64 /* GameView.swift */; };
@@ -47,6 +52,11 @@
 /* Begin PBXFileReference section */
 		DE0EC79E2AB9672200D66EF6 /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
 		DE0EC7A02AB9878B00D66EF6 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		DE0EC7A22AB9BFC900D66EF6 /* PuzzleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemView.swift; sourceTree = "<group>"; };
+		DE0EC7A42AB9C0FC00D66EF6 /* ContentPuzzleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPuzzleItemView.swift; sourceTree = "<group>"; };
+		DE0EC7A92AB9C9BD00D66EF6 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		DE0EC7AD2AB9CFFB00D66EF6 /* DetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextView.swift; sourceTree = "<group>"; };
+		DE0EC7AF2AB9D08900D66EF6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DE200B772AB87D320032DA64 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
 		DE200B802AB87E120032DA64 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -101,6 +111,34 @@
 				DE0EC7A02AB9878B00D66EF6 /* NavigationManager.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DE0EC7A72AB9C99800D66EF6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				DE0EC7AC2AB9CF6F00D66EF6 /* Detail */,
+				DE0EC7AB2AB9CF0300D66EF6 /* Puzzle */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		DE0EC7AB2AB9CF0300D66EF6 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				DE0EC7A22AB9BFC900D66EF6 /* PuzzleItemView.swift */,
+				DE0EC7A42AB9C0FC00D66EF6 /* ContentPuzzleItemView.swift */,
+				DE0EC7A92AB9C9BD00D66EF6 /* PuzzleView.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		DE0EC7AC2AB9CF6F00D66EF6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE0EC7AD2AB9CFFB00D66EF6 /* DetailTextView.swift */,
+				DE0EC7AF2AB9D08900D66EF6 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		DE200B732AB87C330032DA64 /* StartScene */ = {
@@ -174,6 +212,7 @@
 		DE200B7F2AB87E020032DA64 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE0EC7A72AB9C99800D66EF6 /* Component */,
 				DE200B802AB87E120032DA64 /* GameView.swift */,
 			);
 			path = View;
@@ -427,11 +466,16 @@
 				DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */,
 				DE200B962AB8AAD70032DA64 /* Color+theme.swift in Sources */,
 				DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */,
+				DE0EC7B02AB9D08900D66EF6 /* DetailView.swift in Sources */,
 				DE200B782AB87D320032DA64 /* StartView.swift in Sources */,
 				DE46ACA92AB6F7000007A244 /* sliding_puzzleApp.swift in Sources */,
 				DE200B842AB89CAE0032DA64 /* SimpleButtonView.swift in Sources */,
 				DE200B912AB8A82C0032DA64 /* Poppins.swift in Sources */,
+				DE0EC7A32AB9BFC900D66EF6 /* PuzzleItemView.swift in Sources */,
+				DE0EC7AA2AB9C9BD00D66EF6 /* PuzzleView.swift in Sources */,
 				DE200B812AB87E120032DA64 /* GameView.swift in Sources */,
+				DE0EC7AE2AB9CFFB00D66EF6 /* DetailTextView.swift in Sources */,
+				DE0EC7A52AB9C0FC00D66EF6 /* ContentPuzzleItemView.swift in Sources */,
 				DE0EC79F2AB9672200D66EF6 /* NavigationRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
