@@ -11,6 +11,7 @@ struct GameView: View {
 
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     @EnvironmentObject var nav: NavigationManager
+    @StateObject private var viewModel = GameViewModel()
 
     var body: some View {
         ZStack {
@@ -27,7 +28,7 @@ struct GameView: View {
                         .padding(EdgeInsets(top: 0, leading: 20,
                                             bottom: 12, trailing: 20))
                     
-                    PuzzleView()
+                    PuzzleView(viewModel: viewModel)
                         .padding([.leading, .trailing], 20)
                     
                     SimpleButtonView(title: "Reset") {
@@ -38,5 +39,8 @@ struct GameView: View {
             }
         }
         .navigationBarHidden(true)
+        .onAppear {
+            viewModel.initializeGame()
+        }
     }
 }

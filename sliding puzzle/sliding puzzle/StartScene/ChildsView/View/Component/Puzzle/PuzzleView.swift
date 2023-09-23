@@ -11,13 +11,21 @@ struct PuzzleView: View {
 
     private let gridItemLayout = Array(repeating: GridItem(.flexible(),
                                                            spacing: 1), count: 3)
+    @ObservedObject var viewModel: GameViewModel
 
     var body: some View {
-
         LazyVGrid(columns: gridItemLayout, spacing: 1) {
-            ForEach((0...8), id: \.self) { int in
-                PuzzleItemView(content: "\(int + 1)")
+            ForEach(viewModel.items.indices, id: \.self) { row in
+                ForEach(viewModel.items[row]) { item in
+                    let content = String(describing: item)
+                    PuzzleItemView(content: content)
+                        .onTapGesture {
+                            withAnimation(.easeInOut) {
+                                viewModel.shiftPuzzleItem(item)
+                            }
+                        }
+                }
             }
-        }        
+        }
     }
 }
