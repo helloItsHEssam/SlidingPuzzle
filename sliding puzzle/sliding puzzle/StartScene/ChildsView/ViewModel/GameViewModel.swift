@@ -10,17 +10,29 @@ import Foundation
 final class GameViewModel: ObservableObject {
     
     @Published var items: [[PuzzleItemModel]] = []
+    @Published var numberOfMoves = 0
+    @Published var elapsedTime: String = "00:00"
+    private let formmater = DateComponentsFormatter()
+    private var timerCounter: TimeInterval = 0 {
+        didSet {
+            elapsedTime = timerCounter.createTime(formmater)
+        }
+    }
+    private var timer: Timer?
     
     func initializeGame() {
         items = Array(0...8)
             .shuffled()
             .map { PuzzleItemModel(content: $0) }
             .chunked(by: 3)
+        initializeTimer()
     }
     
     func resetGame() {
+        stopTimer()
+        timerCounter = 0
         initializeGame()
-        // TODO: - zero time and move
+        numberOfMoves = 0
     }
     
     func shiftPuzzleItem(_ item: PuzzleItemModel) {
@@ -33,6 +45,25 @@ final class GameViewModel: ObservableObject {
         }
         
         items.swapAt(coordinateOfItemTapped, coordinateOfEmptyNeighbor)
+        numberOfMoves += 1
+    }
+
+    func initializeTimer() {
+        timerCounter = 0
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1.0,
+                                          repeats: true) { [weak self] _ in
+            self?.timerCounter += 1
+        }
+    }
+    
+    func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func resetTimer() {
+        stopTimer()
+        timerCounter = 0
     }
 
     private func findCoordinate(of item: PuzzleItemModel) -> Coordinate? {

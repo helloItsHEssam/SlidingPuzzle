@@ -9,11 +9,14 @@ import SwiftUI
 
 struct DetailView: View {
 
+    @ObservedObject var viewModel: GameViewModel
+    
     var body: some View {
         HStack {
-            DetailTextView(content: "Move: 0")
+            DetailTextView(content: "Move: \(viewModel.numberOfMoves)")
             Spacer()
-            DetailTextView(content: "Time: 00:00")
+            DetailTextView(content: "Time: \(viewModel.elapsedTime)")
         }
+        .animation(nil, value: UUID())
     }
 }

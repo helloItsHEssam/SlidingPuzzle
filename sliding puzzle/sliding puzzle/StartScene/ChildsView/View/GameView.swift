@@ -24,7 +24,7 @@ struct GameView: View {
                     .font(.custom(Poppins.weight(.regular), size: 32))
             } else {
                 VStack(spacing: 0) {
-                    DetailView()
+                    DetailView(viewModel: viewModel)
                         .padding(EdgeInsets(top: 0, leading: 20,
                                             bottom: 12, trailing: 20))
                     
@@ -32,7 +32,7 @@ struct GameView: View {
                         .padding([.leading, .trailing], 20)
                     
                     SimpleButtonView(title: "Reset") {
-                        // TODO: complete reset method
+                        viewModel.resetGame()
                     }
                     .padding(.top, 32)
                 }

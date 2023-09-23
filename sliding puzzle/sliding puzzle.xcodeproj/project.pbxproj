@@ -33,6 +33,7 @@
 		DE8A271F2ABF284D007B720E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A271E2ABF284D007B720E /* GameViewModel.swift */; };
 		DE8A27212ABF2FC1007B720E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27202ABF2FC1007B720E /* Coordinate.swift */; };
 		DE8A27232ABF3346007B720E /* Array+swapItemPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */; };
+		DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */; };
 		DECA11472ABA279A00217879 /* Array+chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11462ABA279A00217879 /* Array+chunk.swift */; };
 		DECA114A2ABA346500217879 /* PuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11492ABA346500217879 /* PuzzleItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		DE8A271E2ABF284D007B720E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		DE8A27202ABF2FC1007B720E /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+swapItemPuzzle.swift"; sourceTree = "<group>"; };
+		DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+timeString.swift"; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */,
 				DECA11462ABA279A00217879 /* Array+chunk.swift */,
 				DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */,
+				DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8A27232ABF3346007B720E /* Array+swapItemPuzzle.swift in Sources */,
+				DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */,
 				DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */,
 				DE200B962AB8AAD70032DA64 /* Color+theme.swift in Sources */,
 				DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */,
