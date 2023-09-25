@@ -11,7 +11,7 @@ struct PuzzleItemModel: Identifiable, Equatable, CustomStringConvertible {
 
     var content: Int
     var description: String {
-        return content == 0 ? "" : "\(content + 1)"
+        return content == 0 ? "" : "\(content)"
     }
     var id: Int { content }
 

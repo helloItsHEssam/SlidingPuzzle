@@ -21,18 +21,22 @@ final class GameViewModel: ObservableObject {
     private var timer: Timer?
     
     func initializeGame() {
-        items = Array(0...8)
-            .shuffled()
+        var puzzleItems = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+        puzzleItems.shuffle()
+        while countInversions(puzzleItems) % 2 != 0 {
+            makePuzzleSolvable(&puzzleItems)
+        }
+        
+        items = puzzleItems
             .map { PuzzleItemModel(content: $0) }
             .chunked(by: 3)
+        
         initializeTimer()
     }
     
     func resetGame() {
-        stopTimer()
-        timerCounter = 0
+        stopGame()
         initializeGame()
-        numberOfMoves = 0
     }
     
     func shiftPuzzleItem(_ item: PuzzleItemModel) {
@@ -46,9 +50,38 @@ final class GameViewModel: ObservableObject {
         
         items.swapAt(coordinateOfItemTapped, coordinateOfEmptyNeighbor)
         numberOfMoves += 1
+        
+        if isPuzzleSolved() {
+            stopGame()
+           // TODO: - send trigger for show win
+        }
+    }
+    
+    private func countInversions(_ puzzle: [Int]) -> Int {
+        var inversions = 0
+        for i in 0..<puzzle.count - 1 {
+            for j in i + 1..<puzzle.count {
+                if puzzle[i] > puzzle[j] && puzzle[i] != 0 && puzzle[j] != 0 {
+                    inversions += 1
+                }
+            }
+        }
+        return inversions
     }
 
-    func initializeTimer() {
+    private func makePuzzleSolvable(_ puzzle: inout [Int]) {
+        var firstIndex = 0
+        var secondIndex = 0
+
+        while firstIndex == secondIndex || puzzle[firstIndex] == 0 || puzzle[secondIndex] == 0 {
+            firstIndex = Int.random(in: 0..<puzzle.count)
+            secondIndex = Int.random(in: 0..<puzzle.count)
+        }
+
+        puzzle.swapAt(firstIndex, secondIndex)
+    }
+
+    private func initializeTimer() {
         timerCounter = 0
         self.timer = Timer.scheduledTimer(withTimeInterval: 1.0,
                                           repeats: true) { [weak self] _ in
@@ -56,16 +89,30 @@ final class GameViewModel: ObservableObject {
         }
     }
     
-    func stopTimer() {
+    private func stopGame() {
         timer?.invalidate()
         timer = nil
     }
     
-    func resetTimer() {
-        stopTimer()
+    private func resetTimer() {
+        stopGame()
         timerCounter = 0
+        numberOfMoves = 0
     }
 
+    private func isPuzzleSolved() -> Bool {
+        let solvedState = [1, 2, 3, 4, 5, 6, 7, 8, 0] // Solved state
+        
+        let currentState = items.flatMap { $0 }.map(\.content)
+        for i in 0 ..< currentState.count {
+            if currentState[i] != solvedState[i] {
+                return false
+            }
+        }
+
+        return true
+    }
+    
     private func findCoordinate(of item: PuzzleItemModel) -> Coordinate? {
         for (rowIndex, row) in items.enumerated() {
             if let columnIndex = row.firstIndex(of: item) {
