@@ -15,7 +15,6 @@
 		DE0EC7AE2AB9CFFB00D66EF6 /* DetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7AD2AB9CFFB00D66EF6 /* DetailTextView.swift */; };
 		DE0EC7B02AB9D08900D66EF6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EC7AF2AB9D08900D66EF6 /* DetailView.swift */; };
 		DE200B782AB87D320032DA64 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B772AB87D320032DA64 /* StartView.swift */; };
-		DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */; };
 		DE200B812AB87E120032DA64 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B802AB87E120032DA64 /* GameView.swift */; };
 		DE200B842AB89CAE0032DA64 /* SimpleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE200B832AB89CAE0032DA64 /* SimpleButtonView.swift */; };
 		DE200B8A2AB8A7400032DA64 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE200B872AB8A73F0032DA64 /* Poppins-ExtraBold.ttf */; };
@@ -35,6 +34,10 @@
 		DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */; };
 		DE8A672F2AC2E1DF00286D30 /* TextMessageAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A672E2AC2E1DF00286D30 /* TextMessageAlertView.swift */; };
 		DE8A67352AC3266A00286D30 /* NavigationManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67342AC3266A00286D30 /* NavigationManagerTest.swift */; };
+		DE8A67382AC32FEB00286D30 /* PoppinsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67372AC32FEB00286D30 /* PoppinsTest.swift */; };
+		DE8A673D2AC331B700286D30 /* TestTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */; };
+		DE8A673F2AC332E100286D30 /* TestArrayChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */; };
+		DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */; };
 		DECA11472ABA279A00217879 /* Array+chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11462ABA279A00217879 /* Array+chunk.swift */; };
 		DECA114A2ABA346500217879 /* PuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11492ABA346500217879 /* PuzzleItemModel.swift */; };
 		DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */; };
@@ -66,7 +69,6 @@
 		DE0EC7AD2AB9CFFB00D66EF6 /* DetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextView.swift; sourceTree = "<group>"; };
 		DE0EC7AF2AB9D08900D66EF6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DE200B772AB87D320032DA64 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
 		DE200B802AB87E120032DA64 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		DE200B832AB89CAE0032DA64 /* SimpleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButtonView.swift; sourceTree = "<group>"; };
 		DE200B872AB8A73F0032DA64 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -90,6 +92,10 @@
 		DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+timeString.swift"; sourceTree = "<group>"; };
 		DE8A672E2AC2E1DF00286D30 /* TextMessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageAlertView.swift; sourceTree = "<group>"; };
 		DE8A67342AC3266A00286D30 /* NavigationManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManagerTest.swift; sourceTree = "<group>"; };
+		DE8A67372AC32FEB00286D30 /* PoppinsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppinsTest.swift; sourceTree = "<group>"; };
+		DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimeInterval.swift; sourceTree = "<group>"; };
+		DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayChunk.swift; sourceTree = "<group>"; };
+		DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArraySwapItemPuzzle.swift; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
 		DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -178,7 +184,6 @@
 		DE200B792AB87D390032DA64 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DE200B7C2AB87D6B0032DA64 /* UserDefaults+Keys.swift */,
 				DECA11462ABA279A00217879 /* Array+chunk.swift */,
 				DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */,
 				DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */,
@@ -355,6 +360,7 @@
 		DE8A67302AC3263500286D30 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A673A2AC3319B00286D30 /* Extension */,
 				DE8A67312AC3263900286D30 /* Infrastructure */,
 			);
 			path = Extra;
@@ -363,6 +369,7 @@
 		DE8A67312AC3263900286D30 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A67362AC32FD900286D30 /* Font */,
 				DE8A67322AC3264600286D30 /* Navigation */,
 			);
 			path = Infrastructure;
@@ -374,6 +381,32 @@
 				DE8A67342AC3266A00286D30 /* NavigationManagerTest.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DE8A67362AC32FD900286D30 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A67372AC32FEB00286D30 /* PoppinsTest.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DE8A673A2AC3319B00286D30 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A673B2AC3319F00286D30 /* Core */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE8A673B2AC3319F00286D30 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */,
+				DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */,
+				DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		DECA11482ABA345400217879 /* Model */ = {
@@ -523,7 +556,6 @@
 				DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */,
 				DE8A672F2AC2E1DF00286D30 /* TextMessageAlertView.swift in Sources */,
 				DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */,
-				DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */,
 				DE200B962AB8AAD70032DA64 /* Color+theme.swift in Sources */,
 				DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */,
 				DE0EC7B02AB9D08900D66EF6 /* DetailView.swift in Sources */,
@@ -548,7 +580,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A673D2AC331B700286D30 /* TestTimeInterval.swift in Sources */,
+				DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */,
 				DE8A67352AC3266A00286D30 /* NavigationManagerTest.swift in Sources */,
+				DE8A67382AC32FEB00286D30 /* PoppinsTest.swift in Sources */,
+				DE8A673F2AC332E100286D30 /* TestArrayChunk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
