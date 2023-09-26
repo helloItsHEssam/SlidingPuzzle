@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PuzzleItemModel: Identifiable, Equatable, CustomStringConvertible {
+struct PuzzleItemModel: Identifiable, Equatable, CustomStringConvertible, Comparable {
 
     var content: Int
     var description: String {
@@ -21,5 +21,21 @@ struct PuzzleItemModel: Identifiable, Equatable, CustomStringConvertible {
 
     static func == (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
         lhs.id == rhs.id
+    }
+    
+    static func < (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
+        lhs.content < rhs.content
+    }
+
+    static func <= (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
+        lhs.content <= rhs.content
+    }
+    
+    static func >= (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
+        lhs.content >= rhs.content
+    }
+    
+    static func > (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
+        lhs.content > rhs.content
     }
 }

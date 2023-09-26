@@ -63,4 +63,18 @@ final class TestPuzzleItemModel: XCTestCase {
         // then
         XCTAssertEqual(item, item2)
     }
+    
+    func testCompareable() {
+        
+        // given
+        let item = PuzzleItemModel(content: 3)
+        let item2 = PuzzleItemModel(content: 2)
+        let item3 = PuzzleItemModel(content: 3)
+        
+        // then
+        XCTAssertGreaterThan(item, item2)
+        XCTAssertGreaterThanOrEqual(item3, item3)
+        XCTAssertLessThan(item2, item)
+        XCTAssertLessThanOrEqual(item3, item)
+    }
 }

@@ -40,6 +40,13 @@
 		DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */; };
 		DE8A67472AC3361100286D30 /* TestCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67462AC3361100286D30 /* TestCoordinate.swift */; };
 		DE8A674A2AC3391E00286D30 /* TestPuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */; };
+		DE8A674C2AC349E100286D30 /* Array+countPuzzleItemInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A674B2AC349E100286D30 /* Array+countPuzzleItemInversion.swift */; };
+		DE8A674E2AC34A9300286D30 /* TestArrayCountPuzzleItemInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A674D2AC34A9300286D30 /* TestArrayCountPuzzleItemInversion.swift */; };
+		DE8A67512AC34C6900286D30 /* Array+PuzzleSolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67502AC34C6900286D30 /* Array+PuzzleSolvable.swift */; };
+		DE8A67532AC34CFF00286D30 /* TestArrayPuzzleItemSolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67522AC34CFF00286D30 /* TestArrayPuzzleItemSolvable.swift */; };
+		DE8A67562AC34F1F00286D30 /* TestGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67552AC34F1F00286D30 /* TestGameViewModel.swift */; };
+		DE8A67582AC351AC00286D30 /* Array+puzzleItemFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67572AC351AC00286D30 /* Array+puzzleItemFind.swift */; };
+		DE8A675A2AC3522200286D30 /* TestArrayFindPuzzleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67592AC3522200286D30 /* TestArrayFindPuzzleItem.swift */; };
 		DECA11472ABA279A00217879 /* Array+chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11462ABA279A00217879 /* Array+chunk.swift */; };
 		DECA114A2ABA346500217879 /* PuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11492ABA346500217879 /* PuzzleItemModel.swift */; };
 		DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */; };
@@ -100,6 +107,13 @@
 		DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArraySwapItemPuzzle.swift; sourceTree = "<group>"; };
 		DE8A67462AC3361100286D30 /* TestCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinate.swift; sourceTree = "<group>"; };
 		DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPuzzleItemModel.swift; sourceTree = "<group>"; };
+		DE8A674B2AC349E100286D30 /* Array+countPuzzleItemInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+countPuzzleItemInversion.swift"; sourceTree = "<group>"; };
+		DE8A674D2AC34A9300286D30 /* TestArrayCountPuzzleItemInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayCountPuzzleItemInversion.swift; sourceTree = "<group>"; };
+		DE8A67502AC34C6900286D30 /* Array+PuzzleSolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+PuzzleSolvable.swift"; sourceTree = "<group>"; };
+		DE8A67522AC34CFF00286D30 /* TestArrayPuzzleItemSolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayPuzzleItemSolvable.swift; sourceTree = "<group>"; };
+		DE8A67552AC34F1F00286D30 /* TestGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGameViewModel.swift; sourceTree = "<group>"; };
+		DE8A67572AC351AC00286D30 /* Array+puzzleItemFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+puzzleItemFind.swift"; sourceTree = "<group>"; };
+		DE8A67592AC3522200286D30 /* TestArrayFindPuzzleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayFindPuzzleItem.swift; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
 		DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -191,6 +205,9 @@
 				DECA11462ABA279A00217879 /* Array+chunk.swift */,
 				DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */,
 				DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */,
+				DE8A674B2AC349E100286D30 /* Array+countPuzzleItemInversion.swift */,
+				DE8A67502AC34C6900286D30 /* Array+PuzzleSolvable.swift */,
+				DE8A67572AC351AC00286D30 /* Array+puzzleItemFind.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -410,6 +427,9 @@
 				DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */,
 				DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */,
 				DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */,
+				DE8A674D2AC34A9300286D30 /* TestArrayCountPuzzleItemInversion.swift */,
+				DE8A67522AC34CFF00286D30 /* TestArrayPuzzleItemSolvable.swift */,
+				DE8A67592AC3522200286D30 /* TestArrayFindPuzzleItem.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -425,6 +445,7 @@
 		DE8A67442AC335FE00286D30 /* ChildsView */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A67542AC34F0C00286D30 /* ViewModel */,
 				DE8A67452AC3360200286D30 /* Model */,
 			);
 			path = ChildsView;
@@ -437,6 +458,14 @@
 				DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE8A67542AC34F0C00286D30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A67552AC34F1F00286D30 /* TestGameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DECA11482ABA345400217879 /* Model */ = {
@@ -582,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A674C2AC349E100286D30 /* Array+countPuzzleItemInversion.swift in Sources */,
 				DE8A27232ABF3346007B720E /* Array+swapItemPuzzle.swift in Sources */,
 				DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */,
 				DE8A672F2AC2E1DF00286D30 /* TextMessageAlertView.swift in Sources */,
@@ -590,8 +620,10 @@
 				DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */,
 				DE0EC7B02AB9D08900D66EF6 /* DetailView.swift in Sources */,
 				DE200B782AB87D320032DA64 /* StartView.swift in Sources */,
+				DE8A67582AC351AC00286D30 /* Array+puzzleItemFind.swift in Sources */,
 				DE8A27212ABF2FC1007B720E /* Coordinate.swift in Sources */,
 				DE46ACA92AB6F7000007A244 /* sliding_puzzleApp.swift in Sources */,
+				DE8A67512AC34C6900286D30 /* Array+PuzzleSolvable.swift in Sources */,
 				DE200B842AB89CAE0032DA64 /* SimpleButtonView.swift in Sources */,
 				DE200B912AB8A82C0032DA64 /* Poppins.swift in Sources */,
 				DE0EC7A32AB9BFC900D66EF6 /* PuzzleItemView.swift in Sources */,
@@ -610,12 +642,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A674E2AC34A9300286D30 /* TestArrayCountPuzzleItemInversion.swift in Sources */,
 				DE8A674A2AC3391E00286D30 /* TestPuzzleItemModel.swift in Sources */,
 				DE8A673D2AC331B700286D30 /* TestTimeInterval.swift in Sources */,
 				DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */,
 				DE8A67352AC3266A00286D30 /* NavigationManagerTest.swift in Sources */,
+				DE8A675A2AC3522200286D30 /* TestArrayFindPuzzleItem.swift in Sources */,
 				DE8A67382AC32FEB00286D30 /* PoppinsTest.swift in Sources */,
+				DE8A67562AC34F1F00286D30 /* TestGameViewModel.swift in Sources */,
 				DE8A673F2AC332E100286D30 /* TestArrayChunk.swift in Sources */,
+				DE8A67532AC34CFF00286D30 /* TestArrayPuzzleItemSolvable.swift in Sources */,
 				DE8A67472AC3361100286D30 /* TestCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

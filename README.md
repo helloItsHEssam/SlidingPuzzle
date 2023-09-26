@@ -11,7 +11,7 @@ Sliding puzzle is a simple game is created by SwiftUI.
   - [x] Created UI with swiftUI.
   - [ ] Implement AI algorithm for solving puzzle.
 - [ ] Test
-  - [ ] Write test cases.
+  - [x] Write test cases.
   - [ ] Write test cases for AI.
 - [ ] CI
   - [ ] setup Github Action.
