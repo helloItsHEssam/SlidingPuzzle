@@ -11,6 +11,14 @@ class NavigationManager: ObservableObject {
 
     @Published var path = NavigationPath()
 
+    var isEmpty: Bool {
+        path.isEmpty
+    }
+    
+    var countOfPages: Int {
+        path.count
+    }
+
     func popToRoot() {
         path = NavigationPath()
     }

@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "20C7C500-B65F-4DCE-B490-96386E279F5B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:sliding puzzle.xcodeproj",
+        "identifier" : "DE46ACB42AB6F7030007A244",
+        "name" : "sliding puzzleTests"
+      }
+    }
+  ],
+  "version" : 1
+}
