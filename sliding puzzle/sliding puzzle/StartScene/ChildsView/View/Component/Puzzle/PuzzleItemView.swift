@@ -21,6 +21,6 @@ struct PuzzleItemView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.tintBlue)
-        .cornerRadius(16)
+        .cornerRadius(20)
     }
 }

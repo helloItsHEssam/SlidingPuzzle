@@ -36,6 +36,7 @@ struct GameView: View {
                     }
                     .padding(.top, 32)
                 }
+                AlertView(show: $viewModel.isFinished)
             }
         }
         .navigationBarHidden(true)

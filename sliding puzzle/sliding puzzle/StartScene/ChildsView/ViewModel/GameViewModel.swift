@@ -12,6 +12,7 @@ final class GameViewModel: ObservableObject {
     @Published var items: [[PuzzleItemModel]] = []
     @Published var numberOfMoves = 0
     @Published var elapsedTime: String = "00:00"
+    @Published var isFinished: Bool = false
     private let formmater = DateComponentsFormatter()
     private var timerCounter: TimeInterval = 0 {
         didSet {
@@ -53,7 +54,7 @@ final class GameViewModel: ObservableObject {
         
         if isPuzzleSolved() {
             stopGame()
-           // TODO: - send trigger for show win
+            isFinished.toggle()
         }
     }
     

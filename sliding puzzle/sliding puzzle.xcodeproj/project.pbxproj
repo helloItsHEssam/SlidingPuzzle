@@ -34,8 +34,10 @@
 		DE8A27212ABF2FC1007B720E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27202ABF2FC1007B720E /* Coordinate.swift */; };
 		DE8A27232ABF3346007B720E /* Array+swapItemPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */; };
 		DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */; };
+		DE8A672F2AC2E1DF00286D30 /* TextMessageAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A672E2AC2E1DF00286D30 /* TextMessageAlertView.swift */; };
 		DECA11472ABA279A00217879 /* Array+chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11462ABA279A00217879 /* Array+chunk.swift */; };
 		DECA114A2ABA346500217879 /* PuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11492ABA346500217879 /* PuzzleItemModel.swift */; };
+		DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +89,10 @@
 		DE8A27202ABF2FC1007B720E /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		DE8A27222ABF3346007B720E /* Array+swapItemPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+swapItemPuzzle.swift"; sourceTree = "<group>"; };
 		DE8A27252ABF45CC007B720E /* TimeInterval+timeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+timeString.swift"; sourceTree = "<group>"; };
+		DE8A672E2AC2E1DF00286D30 /* TextMessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageAlertView.swift; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
+		DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		DE0EC7A72AB9C99800D66EF6 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A672D2AC2E1C800286D30 /* Alert */,
 				DE0EC7AC2AB9CF6F00D66EF6 /* Detail */,
 				DE0EC7AB2AB9CF0300D66EF6 /* Puzzle */,
 			);
@@ -156,8 +161,6 @@
 		DE200B732AB87C330032DA64 /* StartScene */ = {
 			isa = PBXGroup;
 			children = (
-				DE200B762AB87C3F0032DA64 /* ViewModel */,
-				DE200B752AB87C3D0032DA64 /* Model */,
 				DE200B742AB87C390032DA64 /* View */,
 				DE200B7E2AB87DFE0032DA64 /* ChildsView */,
 			);
@@ -170,20 +173,6 @@
 				DE200B772AB87D320032DA64 /* StartView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		DE200B752AB87C3D0032DA64 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DE200B762AB87C3F0032DA64 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DE200B792AB87D390032DA64 /* Core */ = {
@@ -354,6 +343,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DE8A672D2AC2E1C800286D30 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */,
+				DE8A672E2AC2E1DF00286D30 /* TextMessageAlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		DECA11482ABA345400217879 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +497,8 @@
 			files = (
 				DE8A27232ABF3346007B720E /* Array+swapItemPuzzle.swift in Sources */,
 				DE8A27262ABF45CC007B720E /* TimeInterval+timeString.swift in Sources */,
+				DE8A672F2AC2E1DF00286D30 /* TextMessageAlertView.swift in Sources */,
+				DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */,
 				DE200B7D2AB87D6B0032DA64 /* UserDefaults+Keys.swift in Sources */,
 				DE200B962AB8AAD70032DA64 /* Color+theme.swift in Sources */,
 				DE0EC7A12AB9878B00D66EF6 /* NavigationManager.swift in Sources */,
