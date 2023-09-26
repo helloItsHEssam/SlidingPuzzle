@@ -20,6 +20,6 @@ struct PuzzleItemModel: Identifiable, Equatable, CustomStringConvertible {
     }
 
     static func == (lhs: PuzzleItemModel, rhs: PuzzleItemModel) -> Bool {
-        lhs.id == rhs.content
+        lhs.id == rhs.id
     }
 }

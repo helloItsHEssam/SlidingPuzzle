@@ -38,6 +38,8 @@
 		DE8A673D2AC331B700286D30 /* TestTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */; };
 		DE8A673F2AC332E100286D30 /* TestArrayChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */; };
 		DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */; };
+		DE8A67472AC3361100286D30 /* TestCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67462AC3361100286D30 /* TestCoordinate.swift */; };
+		DE8A674A2AC3391E00286D30 /* TestPuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */; };
 		DECA11472ABA279A00217879 /* Array+chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11462ABA279A00217879 /* Array+chunk.swift */; };
 		DECA114A2ABA346500217879 /* PuzzleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA11492ABA346500217879 /* PuzzleItemModel.swift */; };
 		DEE3C31E2AC1EF3500F71D8F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */; };
@@ -96,6 +98,8 @@
 		DE8A673C2AC331B700286D30 /* TestTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimeInterval.swift; sourceTree = "<group>"; };
 		DE8A673E2AC332E100286D30 /* TestArrayChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayChunk.swift; sourceTree = "<group>"; };
 		DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArraySwapItemPuzzle.swift; sourceTree = "<group>"; };
+		DE8A67462AC3361100286D30 /* TestCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinate.swift; sourceTree = "<group>"; };
+		DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPuzzleItemModel.swift; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
 		DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -326,6 +330,7 @@
 		DE46ACB82AB6F7030007A244 /* sliding puzzleTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A67432AC335F400286D30 /* StartScene */,
 				DE8A67302AC3263500286D30 /* Extra */,
 			);
 			path = "sliding puzzleTests";
@@ -407,6 +412,31 @@
 				DE8A67412AC333C100286D30 /* TestArraySwapItemPuzzle.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		DE8A67432AC335F400286D30 /* StartScene */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A67442AC335FE00286D30 /* ChildsView */,
+			);
+			path = StartScene;
+			sourceTree = "<group>";
+		};
+		DE8A67442AC335FE00286D30 /* ChildsView */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A67452AC3360200286D30 /* Model */,
+			);
+			path = ChildsView;
+			sourceTree = "<group>";
+		};
+		DE8A67452AC3360200286D30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A67462AC3361100286D30 /* TestCoordinate.swift */,
+				DE8A67492AC3391E00286D30 /* TestPuzzleItemModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DECA11482ABA345400217879 /* Model */ = {
@@ -580,11 +610,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A674A2AC3391E00286D30 /* TestPuzzleItemModel.swift in Sources */,
 				DE8A673D2AC331B700286D30 /* TestTimeInterval.swift in Sources */,
 				DE8A67422AC333C100286D30 /* TestArraySwapItemPuzzle.swift in Sources */,
 				DE8A67352AC3266A00286D30 /* NavigationManagerTest.swift in Sources */,
 				DE8A67382AC32FEB00286D30 /* PoppinsTest.swift in Sources */,
 				DE8A673F2AC332E100286D30 /* TestArrayChunk.swift in Sources */,
+				DE8A67472AC3361100286D30 /* TestCoordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
