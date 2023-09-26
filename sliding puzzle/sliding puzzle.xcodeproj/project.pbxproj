@@ -114,6 +114,7 @@
 		DE8A67552AC34F1F00286D30 /* TestGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGameViewModel.swift; sourceTree = "<group>"; };
 		DE8A67572AC351AC00286D30 /* Array+puzzleItemFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+puzzleItemFind.swift"; sourceTree = "<group>"; };
 		DE8A67592AC3522200286D30 /* TestArrayFindPuzzleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayFindPuzzleItem.swift; sourceTree = "<group>"; };
+		DE8A675C2AC361A200286D30 /* Unit Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Unit Tests.xctestplan"; sourceTree = "<group>"; };
 		DECA11462ABA279A00217879 /* Array+chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunk.swift"; sourceTree = "<group>"; };
 		DECA11492ABA346500217879 /* PuzzleItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemModel.swift; sourceTree = "<group>"; };
 		DEE3C31D2AC1EF3500F71D8F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -327,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				DE46ACA82AB6F7000007A244 /* sliding_puzzleApp.swift */,
+				DE8A675C2AC361A200286D30 /* Unit Tests.xctestplan */,
 				DE200B8D2AB8A7B80032DA64 /* sliding-puzzle-Info.plist */,
 				DE200B732AB87C330032DA64 /* StartScene */,
 				DE200B7A2AB87D4A0032DA64 /* Extra */,
